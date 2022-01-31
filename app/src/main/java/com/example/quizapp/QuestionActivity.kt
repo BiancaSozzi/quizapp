@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -38,7 +39,9 @@ class QuestionActivity : AppCompatActivity() {
                     setQuestion(btnNextquestion)
                 }
                 else -> {
-                    Toast.makeText(this, "finish", Toast.LENGTH_LONG).show()
+                    val intent = Intent(this, ResultActivity::class.java)
+                    startActivity(intent)
+                    finish()
                 }
             }
         }
