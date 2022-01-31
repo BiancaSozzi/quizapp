@@ -17,10 +17,13 @@ class QuestionActivity : AppCompatActivity() {
     private var optionsRv: RecyclerView? = null
     private var questionsList: ArrayList<Question> = ArrayList()
     private var currentPosition = 0
+    private var userName: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question)
+
+        userName = intent.getStringExtra(Constants.USER_NAME)
 
         questionsList = Constants.getQuestions()
 
@@ -40,6 +43,7 @@ class QuestionActivity : AppCompatActivity() {
                 }
                 else -> {
                     val intent = Intent(this, ResultActivity::class.java)
+                    intent.putExtra(Constants.USER_NAME, userName)
                     startActivity(intent)
                     finish()
                 }

@@ -34,9 +34,10 @@
         android:textColor="@color/white"/>
 
     <TextView
+        android:id="@+id/tv_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Denis"
+        tools:text="Denis"
         android:textSize="25sp"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
@@ -44,6 +45,7 @@
         android:textColor="@color/white"/>
 
     <Button
+        android:id="@+id/btn_finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
