@@ -61,6 +61,7 @@
         </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/options_rv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:listitem="@layout/option_item"
@@ -73,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/design_default_color_primary"
-            android:text="@string/submit_txt"
+            android:text="@string/next_question"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@color/white"

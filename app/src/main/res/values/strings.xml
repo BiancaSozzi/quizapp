@@ -6,6 +6,6 @@
     <string name="name_example">John Doe</string>
     <string name="start_txt">Start</string>
     <string name="name_txt">Name</string>
-    <string name="submit_txt">Submit</string>
     <string name="question_image_description">Question image</string>
+    <string name="next_question">Next Question</string>
 </resources>
